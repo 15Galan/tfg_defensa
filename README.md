@@ -1,3 +1,10 @@
+<div align="center">
+    <br/>
+    <img src="images/logos/etsii/claro.png#gh-light-mode-only" height=100 alt="ETSII logo (claro)"/>
+    <img src="images/logos/etsii/oscuro.png#gh-dark-mode-only" height=100 alt="ETSII logo (oscuro)"/>
+    <br/>
+</div>
+
 # W.I.P
 
 Repositorio en desarrollo.
