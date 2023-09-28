@@ -96,6 +96,16 @@
         \includegraphics[scale=0.15]{images/diagramas/cron.png}
     \end{frame}
 
+    \begin{frame}{Toma de decisiones}
+        \begin{columns}[c]
+            \column{.5\textwidth}
+                \includegraphics[scale=0.1]{images/diagramas/conexion.png}
+            
+            \column{.5\textwidth}
+                \includegraphics[scale=0.1]{images/diagramas/puertos.png}
+        \end{columns}
+    \end{frame}
+
 
 \section{Catálogo de conceptos}
 
@@ -154,43 +164,6 @@
         \begin{block}{Ransomware}
             Prueba de concepto de un ransomware.
         \end{block}
-    \end{frame}
-    
-
-\section{Toma de decisiones}
-
-    \begin{frame}
-        \Huge{\centerline{Toma de decisiones}}
-    \end{frame}
-
-    \begin{frame}{Conexiones entre el sitio web, Docker y el servidor}
-        \begin{columns}[c]
-            \column{.5\textwidth}
-                \includegraphics[scale=0.1]{images/diagramas/conexion.png}
-            
-            \column{.5\textwidth}
-                \includegraphics[scale=0.1]{images/diagramas/puertos.png}
-        \end{columns}
-
-        \begin{columns}[c]
-            \column{.5\textwidth}
-                \\
-                \texttt{exec("docker run (...)")}
-            
-            \column{.5\textwidth}
-                \\
-                Gestión de puertos usando PHP
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Procesos bajo el usuario \texttt{www-data}}
-        \begin{itemize}
-            \item Pertenencia al grupo \texttt{docker}
-            \\~\\
-            \item Ejecución del servicio de Docker
-            \\~\\
-            \item Ejecución de la tarea de cron
-        \end{itemize}
     \end{frame}
 
     
