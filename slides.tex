@@ -35,34 +35,9 @@
                 \end{itemize}
             
             \column{.5\textwidth}
-                \includegraphics[scale=0.25]{images/capturas/notion/resumen.png}
+                \includegraphics[scale=0.25]{images/capturas/notion.png}
         \end{columns}
     \end{frame}
-
-    % \begin{frame}
-    %     \centering
-
-    %     \includegraphics[scale=0.3]{images/capturas/notion/gantt.png}
-    % \end{frame}
-
-    % \begin{frame}
-    %     \centering
-
-    %     \includegraphics[scale=0.3]{images/capturas/notion/kanban.png}
-    % \end{frame}
-
-    \begin{frame}{Estructura global del proyecto}
-        \centering
-
-        \includegraphics[scale=0.2]{images/diagramas/estructura-global.png}
-    \end{frame}
-
-
-% \section{Investigación previa}
-
-%     \begin{frame}
-%         \Huge{\centerline{Investigación previa}}
-%     \end{frame}
 
     \begin{frame}{Proceso creativo}
         \begin{columns}[c]
@@ -81,12 +56,8 @@
     \end{frame}
 
     \begin{frame}{Análisis de tecnologías}
-        % \centering
-
-        % \includegraphics[scale=0.3]{images/capturas/tabla.png}
-
         \begin{itemize}
-            \item \textbf{Sitio web}: Astro / Wordpress / Drupal
+            \item \textbf{Sitio web}: Astro / WordPress / Drupal
             \\~\\
             \item \textbf{Base de datos}: SQLite / MySQL
             \\~\\
@@ -212,14 +183,6 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Limitaciones del uso de contenedores Docker}
-        \begin{itemize}
-            \item Herramientas con interfaces gráficas (GUI)
-            \\~\\
-            \item Definición de puertos en el arranque del contenedor
-        \end{itemize}
-    \end{frame}
-
     \begin{frame}{Procesos bajo el usuario \texttt{www-data}}
         \begin{itemize}
             \item Pertenencia al grupo \texttt{docker}
@@ -242,8 +205,8 @@
             \column{.55\textwidth}
                 \begin{block}{\texttt{instalar.sh}}
                     \begin{enumerate}
-                        \item Obtiene los laboratorios
-                        \item Revisa los contenedores Docker
+                        \item Obtiene los laboratorios.
+                        \item Para cada uno:
                         \item Si ya existe, lo actualiza.
                         \item Si no existe, lo construye.
                     \end{enumerate}
@@ -260,12 +223,12 @@
                 \begin{block}{\texttt{stop-1h-container.sh}}
                     \scriptsize
 
-            \begin{enumerate}
-                \item {Obtiene los contenedores\\y su fecha de inicio}
-                \item Para cada uno:
-                \item Si pasó 1 hora, lo destruye.
-                \item Muestra un mensaje informativo.
-            \end{enumerate}
+                    \begin{enumerate}
+                        \item {Obtiene los laboratorios\\activos y su inicio.}
+                        \item Para cada uno:
+                        \item Muestra un mensaje informativo.
+                        \item Si pasó 1 hora, lo destruye.
+                    \end{enumerate}
                 \end{block}
             
             \column{.55\textwidth}
@@ -274,23 +237,48 @@
     \end{frame}
 
     \begin{frame}{Proyectos para laboratorios}
-        \begin{center}
-            \includegraphics[scale=0.1]{images/capturas/vscode/ip-osint.png}
-        \end{center}
-
-        \begin{block}{\texttt{ip-osint/}}
+        \begin{block}{\texttt{ip-osint}}
             Proyecto escrito en Python que recibe una IP o lista de IPs y devuelve información sobre ellas obtenidas de diversas fuentes.
         \end{block}
-    \end{frame}
-
-    \begin{frame}
-        \begin{center}
-            \includegraphics[scale=0.125]{images/capturas/vscode/stockholm.png}
-        \end{center}
-
+        
         \begin{block}{\texttt{stockholm.py}}
             Script escrito en Python que cifra (y descifra) los ficheros de un directorio específico del sistema, simulando un ransomware.
         \end{block}
+    \end{frame}
+
+
+\section{Conclusiones}
+
+    \begin{frame}
+        \Huge{\centerline{Conclusiones y futuras}}
+        \Huge{\centerline{líneas de trabajo}}
+    \end{frame}
+
+    \begin{frame}{Conclusiones}
+        \begin{enumerate}
+            \item Aumentar mi conocimiento en ciberseguridad
+            \\~\\
+            \item Aprender sobre Docker y sus posibilidades
+            \\~\\
+        \end{enumerate}
+
+        \begin{itemize}
+            \item Aprender sobre desarrollo web mediante WordPress
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Futuras líneas de trabajo}
+        \begin{itemize}
+            \item Trasladar el proyecto a un servicio de alojamiento
+            \\~\\
+            \item Expandir el contenido de Pentesting
+            \\~\\
+            \item Optimizar la plataforma (no usar WordPress)
+            \\~\\
+            \item Generalizar el cotenido (no solo Pentesting)
+            \\~\\
+            \item Organizar el contenido (categorías, rutas, módulos...)
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
