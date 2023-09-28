@@ -205,8 +205,8 @@
             \column{.55\textwidth}
                 \begin{block}{\texttt{instalar.sh}}
                     \begin{enumerate}
-                        \item Obtiene los laboratorios
-                        \item Revisa los contenedores Docker
+                        \item Obtiene los laboratorios.
+                        \item Para cada uno:
                         \item Si ya existe, lo actualiza.
                         \item Si no existe, lo construye.
                     \end{enumerate}
@@ -223,12 +223,12 @@
                 \begin{block}{\texttt{stop-1h-container.sh}}
                     \scriptsize
 
-            \begin{enumerate}
-                \item {Obtiene los contenedores\\y su fecha de inicio}
-                \item Para cada uno:
-                \item Si pasó 1 hora, lo destruye.
-                \item Muestra un mensaje informativo.
-            \end{enumerate}
+                    \begin{enumerate}
+                        \item {Obtiene los laboratorios\\activos y su inicio.}
+                        \item Para cada uno:
+                        \item Muestra un mensaje informativo.
+                        \item Si pasó 1 hora, lo destruye.
+                    \end{enumerate}
                 \end{block}
             
             \column{.55\textwidth}
