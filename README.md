@@ -1,7 +1,7 @@
 <div align="center">
     <br/>
-    <img src="images/logos/etsii/claro.png#gh-light-mode-only" height=100 alt="ETSII logo (claro)"/>
-    <img src="images/logos/etsii/oscuro.png#gh-dark-mode-only" height=100 alt="ETSII logo (oscuro)"/>
+    <img src=".github/readme/etsii-claro.png#gh-light-mode-only" height=100 alt="ETSII logo (claro)"/>
+    <img src=".github/readme/etsii-oscuro.png#gh-dark-mode-only" height=100 alt="ETSII logo (oscuro)"/>
     <br/>
 </div>
 
