@@ -34,7 +34,7 @@ Respecto al cuerpo de la presentación, se ha usado una estructura basada en el 
 
 ## Información sobre la defensa
 
-> **Note**  
+> [!NOTE]
 > La defensa debe durar un máximo de **20 minutos**.
 >
 > - **15 minutos** para la presentación.
